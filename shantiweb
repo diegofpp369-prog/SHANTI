@@ -1,0 +1,241 @@
+
+<!DOCTYPE html><html lang="es" data-tsd-source="/src/routes/__root.tsx:117:5"><head data-tsd-source="/src/routes/__root.tsx:118:7"><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/assets/hero-yoga-CqYIP4DP.jpg"/><link rel="stylesheet" href="/assets/styles-BrGzuIAY.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" data-precedence="default"/><title>Shanti Ibarra — Bienestar para cuerpo, mente y alma</title><meta name="author" content="Shanti Ibarra"/><meta property="og:site_name" content="Shanti Ibarra"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="theme-color" content="#f6f1e8"/><meta name="description" content="Santuario de bienestar en Ibarra, Ecuador. Yoga, brunch consciente, ceremonias, talleres y retiros en los Andes de Imbabura."/><meta property="og:title" content="Shanti Ibarra — Bienestar en los Andes"/><meta property="og:description" content="Un espacio para reconectar con el cuerpo, la mente y el alma en Ibarra, Ecuador."/><meta property="og:url" content="/"/><link rel="modulepreload" href="/assets/index-CbyR7_M0.js"/><link rel="modulepreload" href="/assets/jsx-runtime-VBQ5xY5v.js"/><link rel="modulepreload" href="/assets/routes-DA_XHPpJ.js"/><link rel="modulepreload" href="/assets/arrow-up-right-DEOcjDwH.js"/><link rel="modulepreload" href="/assets/exp-encuentros-DYtfiv18.js"/><link rel="modulepreload" href="/assets/exp-talleres-B4r7AOQd.js"/><link rel="modulepreload" href="/assets/intro-space-QnPRqCuu.js"/><link rel="modulepreload" href="/assets/section-CgNePSDm.js"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="canonical" href="/"/>
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<meta name="twitter:title" content="Shanti Ibarra — Bienestar en los Andes"><meta name="twitter:description" content="Un espacio para reconectar con el cuerpo, la mente y el alma en Ibarra, Ecuador."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1311e8f1-42a7-45b8-bc39-4a72e282d517/id-preview-a4bd6595--e887c69f-c8f2-4c2b-b200-9743f47561ec.lovable.app-1784661365961.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1311e8f1-42a7-45b8-bc39-4a72e282d517/id-preview-a4bd6595--e887c69f-c8f2-4c2b-b200-9743f47561ec.lovable.app-1784661365961.png"></head><body data-tsd-source="/src/routes/__root.tsx:121:7"><header class="fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-transparent" data-tsd-source="/src/components/site-header.tsx:27:5"><div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10" data-tsd-source="/src/components/site-header.tsx:34:7"><a data-tsd-source="/src/components/site-header.tsx:35:9" class="group flex items-center gap-3 active" href="/" data-status="active" aria-current="page"><span class="font-display text-xl tracking-widest text-foreground" data-tsd-source="/src/components/site-header.tsx:36:11">SHANTI</span><span class="hidden h-px w-6 bg-foreground/30 sm:block" data-tsd-source="/src/components/site-header.tsx:39:11"></span><span class="hidden text-[0.65rem] tracking-[0.32em] text-muted-foreground sm:block" data-tsd-source="/src/components/site-header.tsx:40:11">IBARRA</span></a><nav class="hidden items-center gap-9 lg:flex" data-tsd-source="/src/components/site-header.tsx:45:9"><a data-tsd-source="/src/components/site-header.tsx:47:13" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground text-foreground" href="/" data-status="active" aria-current="page">Inicio</a><a data-tsd-source="/src/components/site-header.tsx:47:13" href="/experiencias" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground">Experiencias</a><a data-tsd-source="/src/components/site-header.tsx:47:13" href="/eventos" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground">Eventos</a><a data-tsd-source="/src/components/site-header.tsx:47:13" href="/galeria" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground">Galería</a><a data-tsd-source="/src/components/site-header.tsx:47:13" href="/nosotros" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground">Nosotros</a><a data-tsd-source="/src/components/site-header.tsx:47:13" href="/contacto" class="text-[0.8rem] tracking-[0.18em] uppercase text-foreground/75 transition-colors hover:text-foreground">Contacto</a></nav><div class="flex items-center gap-3" data-tsd-source="/src/components/site-header.tsx:59:9"><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" class="hidden rounded-full border border-foreground/70 px-5 py-2.5 text-[0.72rem] tracking-[0.22em] uppercase text-foreground transition-all hover:bg-foreground hover:text-background md:inline-block" data-tsd-source="/src/components/site-header.tsx:60:11">Reservar</a><button aria-label="Menú" class="rounded-full border border-foreground/30 p-2 lg:hidden" data-tsd-source="/src/components/site-header.tsx:68:11"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-4 w-4" aria-hidden="true" data-tsd-source="/src/components/site-header.tsx:73:49"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></header><main class="pt-0" data-tsd-source="/src/routes/__root.tsx:135:7"><!--$--><section class="relative h-[100svh] w-full overflow-hidden" data-tsd-source="/src/routes/index.tsx:57:7"><div class="absolute inset-0" data-tsd-source="/src/routes/index.tsx:58:9"><img src="/assets/hero-yoga-CqYIP4DP.jpg" alt="Yoga al amanecer frente al volcán Imbabura, Ecuador" class="ken-burns h-full w-full object-cover" width="1920" height="1280" data-tsd-source="/src/routes/index.tsx:59:11"/><div class="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/60" data-tsd-source="/src/routes/index.tsx:66:11"></div></div><div class="relative z-10 flex h-full flex-col justify-between px-6 pb-12 pt-32 lg:px-16 lg:pb-20" data-tsd-source="/src/routes/index.tsx:69:9"><div class="fade-slow flex items-center gap-4 text-white/80" data-tsd-source="/src/routes/index.tsx:70:11"><span class="h-px w-10 bg-white/60" data-tsd-source="/src/routes/index.tsx:71:13"></span><span class="text-[0.7rem] tracking-[0.32em] uppercase" data-tsd-source="/src/routes/index.tsx:72:13">Ibarra · Imbabura · Ecuador</span></div><div class="reveal max-w-4xl" data-tsd-source="/src/routes/index.tsx:75:11"><h1 class="font-display text-6xl leading-[0.95] text-white md:text-8xl lg:text-[9rem]" data-tsd-source="/src/routes/index.tsx:76:13">Shanti<br data-tsd-source="/src/routes/index.tsx:77:21"/><span class="italic text-white/95" data-tsd-source="/src/routes/index.tsx:78:15">Ibarra</span></h1><p class="mt-8 max-w-lg font-serif text-xl leading-relaxed text-white/90 md:text-2xl" data-tsd-source="/src/routes/index.tsx:80:13">Bienestar para cuerpo, mente y alma.</p><div class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center" data-tsd-source="/src/routes/index.tsx:84:13"><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" class="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-[0.72rem] tracking-[0.24em] uppercase text-charcoal transition-all hover:bg-primary hover:text-primary-foreground" data-tsd-source="/src/routes/index.tsx:85:15">Reservar por WhatsApp<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:92:17"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a data-tsd-source="/src/routes/index.tsx:94:15" href="/experiencias" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/70 px-7 py-4 text-[0.72rem] tracking-[0.24em] uppercase text-white transition-all hover:bg-white/10">Conocer experiencias</a></div></div><div class="flex items-center justify-center pt-8" data-tsd-source="/src/routes/index.tsx:103:11"><div class="flex flex-col items-center gap-3 text-white/70" data-tsd-source="/src/routes/index.tsx:104:13"><span class="text-[0.6rem] tracking-[0.32em] uppercase" data-tsd-source="/src/routes/index.tsx:105:15">Deslizar</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down h-4 w-4 animate-bounce" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:106:15"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></div></div></div></section><section class="mx-auto max-w-7xl px-6 py-24 md:py-32 lg:px-10 !py-32 md:!py-40" data-tsd-source="/src/components/section.tsx:19:5"><div class="grid gap-16 md:grid-cols-12 md:gap-20 items-center" data-tsd-source="/src/routes/index.tsx:114:9"><div class="md:col-span-7" data-tsd-source="/src/routes/index.tsx:115:11"><div class="eyebrow mb-8" data-tsd-source="/src/routes/index.tsx:116:13">Un espacio</div><h2 class="font-display text-5xl leading-[1.02] md:text-7xl" data-tsd-source="/src/routes/index.tsx:117:13">Un espacio para <em class="italic text-primary/90" data-tsd-source="/src/routes/index.tsx:118:31">volver a ti.</em></h2><div class="mt-10 max-w-lg space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg" data-tsd-source="/src/routes/index.tsx:120:13"><p data-tsd-source="/src/routes/index.tsx:121:15">Shanti Ibarra nace como un refugio en los Andes ecuatorianos. Un santuario contemporáneo donde el yoga, los alimentos vivos, las ceremonias y la comunidad se entretejen en una sola experiencia.</p><p data-tsd-source="/src/routes/index.tsx:126:15">Aquí no vienes a hacer. Vienes a estar. A recordarte. A respirar.</p></div><a data-tsd-source="/src/routes/index.tsx:131:13" href="/nosotros" class="mt-12 inline-flex items-center gap-3 text-[0.75rem] tracking-[0.24em] uppercase text-foreground group"><span class="border-b border-foreground/40 pb-1 group-hover:border-primary" data-tsd-source="/src/routes/index.tsx:135:15">Conocer nuestra historia</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:138:15"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div><div class="md:col-span-5" data-tsd-source="/src/routes/index.tsx:141:11"><div class="relative aspect-[4/5] overflow-hidden rounded-sm" data-tsd-source="/src/routes/index.tsx:142:13"><img src="/assets/intro-space-BzJGochL.jpg" alt="Interior sereno del santuario Shanti" class="h-full w-full object-cover" loading="lazy" width="1600" height="1800" data-tsd-source="/src/routes/index.tsx:143:15"/></div></div></div></section><section class="bg-secondary/40 py-32 md:py-40" data-tsd-source="/src/routes/index.tsx:157:7"><div class="mx-auto max-w-7xl px-6 lg:px-10" data-tsd-source="/src/routes/index.tsx:158:9"><div class="flex flex-col justify-between gap-10 md:flex-row md:items-end" data-tsd-source="/src/routes/index.tsx:159:11"><div class="max-w-xl" data-tsd-source="/src/routes/index.tsx:160:13"><div class="eyebrow mb-6" data-tsd-source="/src/routes/index.tsx:161:15">Experiencias</div><h2 class="font-display text-5xl leading-[1.05] md:text-7xl" data-tsd-source="/src/routes/index.tsx:162:15">Prácticas para <em class="italic" data-tsd-source="/src/routes/index.tsx:163:32">habitar</em> el presente.</h2></div><p class="max-w-sm text-muted-foreground" data-tsd-source="/src/routes/index.tsx:166:13">Seis maneras de reconectar. Cada experiencia se cultiva en grupos pequeños, en espacios cuidados, con la calma como método.</p></div><div class="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-tsd-source="/src/routes/index.tsx:172:11"><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#yoga" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-yoga-CcMgP_to.jpg" alt="Yoga" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Yoga</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Práctica consciente que integra cuerpo, respiración y presencia.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#brunch" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-brunch-Dv8kTtiD.jpg" alt="Brunch Consciente" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Brunch Consciente</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Comer despacio, en comunidad, con alimentos vivos y locales.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#ceremonias" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-ceremonias-DxS25zoc.jpg" alt="Ceremonias" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Ceremonias</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Rituales contemporáneos para transitar, honrar y soltar.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#talleres" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-talleres-DbfvkxDb.jpg" alt="Talleres" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Talleres</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Espacios íntimos de aprendizaje, escritura y meditación.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#encuentros" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-encuentros-9pN4hz-k.jpg" alt="Encuentros" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Encuentros</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Mesas largas, música suave y conversaciones que sanan.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a><a data-tsd-source="/src/routes/index.tsx:174:15" href="/experiencias#retiros" class="group block"><div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-muted" data-tsd-source="/src/routes/index.tsx:180:17"><img src="/assets/exp-retiros-oz75XA1K.jpg" alt="Retiros" class="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" loading="lazy" data-tsd-source="/src/routes/index.tsx:181:19"/><div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" data-tsd-source="/src/routes/index.tsx:187:19"></div></div><div class="mt-6 flex items-start justify-between gap-4" data-tsd-source="/src/routes/index.tsx:189:17"><div data-tsd-source="/src/routes/index.tsx:190:19"><h3 class="font-display text-2xl md:text-3xl" data-tsd-source="/src/routes/index.tsx:191:21">Retiros</h3><p class="mt-2 max-w-xs text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:192:21">Días completos entre montañas para volver a ti.</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right mt-2 h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:196:19"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></div></a></div></div></section><section class="mx-auto max-w-7xl px-6 py-24 md:py-32 lg:px-10 !py-32 md:!py-40" data-tsd-source="/src/components/section.tsx:19:5"><div class="max-w-3xl " data-tsd-source="/src/components/section.tsx:21:9"><div class="eyebrow mb-6" data-tsd-source="/src/components/section.tsx:22:23">Por qué Shanti</div></div><div class="mt-4 max-w-3xl" data-tsd-source="/src/routes/index.tsx:206:9"><h2 class="font-display text-5xl leading-[1.05] md:text-7xl" data-tsd-source="/src/routes/index.tsx:207:11">No es un estudio.<br data-tsd-source="/src/routes/index.tsx:208:30"/>Es una forma de <em class="italic text-primary/90" data-tsd-source="/src/routes/index.tsx:209:29">vivir.</em></h2></div><div class="mt-20 grid gap-x-12 gap-y-14 md:grid-cols-2 lg:grid-cols-3" data-tsd-source="/src/routes/index.tsx:213:9"><div class="border-t border-border pt-6" data-tsd-source="/src/routes/index.tsx:215:13"><div class="flex items-baseline gap-4" data-tsd-source="/src/routes/index.tsx:216:15"><span class="font-display text-2xl text-primary/70" data-tsd-source="/src/routes/index.tsx:217:17">01</span><h3 class="font-display text-3xl" data-tsd-source="/src/routes/index.tsx:218:17">Comunidad</h3></div><p class="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:220:15">Un círculo humano cálido donde cada persona es bienvenida tal como es.</p></div><div class="border-t border-border pt-6" data-tsd-source="/src/routes/index.tsx:215:13"><div class="flex items-baseline gap-4" data-tsd-source="/src/routes/index.tsx:216:15"><span class="font-display text-2xl text-primary/70" data-tsd-source="/src/routes/index.tsx:217:17">02</span><h3 class="font-display text-3xl" data-tsd-source="/src/routes/index.tsx:218:17">Bienestar integral</h3></div><p class="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:220:15">Cuerpo, mente y alma alineados a través de prácticas ancestrales y contemporáneas.</p></div><div class="border-t border-border pt-6" data-tsd-source="/src/routes/index.tsx:215:13"><div class="flex items-baseline gap-4" data-tsd-source="/src/routes/index.tsx:216:15"><span class="font-display text-2xl text-primary/70" data-tsd-source="/src/routes/index.tsx:217:17">03</span><h3 class="font-display text-3xl" data-tsd-source="/src/routes/index.tsx:218:17">Naturaleza</h3></div><p class="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:220:15">El paisaje andino de Imbabura como maestro, refugio y espejo.</p></div><div class="border-t border-border pt-6" data-tsd-source="/src/routes/index.tsx:215:13"><div class="flex items-baseline gap-4" data-tsd-source="/src/routes/index.tsx:216:15"><span class="font-display text-2xl text-primary/70" data-tsd-source="/src/routes/index.tsx:217:17">04</span><h3 class="font-display text-3xl" data-tsd-source="/src/routes/index.tsx:218:17">Autenticidad</h3></div><p class="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:220:15">Experiencias reales, sin poses ni pretensión. Solo presencia.</p></div><div class="border-t border-border pt-6" data-tsd-source="/src/routes/index.tsx:215:13"><div class="flex items-baseline gap-4" data-tsd-source="/src/routes/index.tsx:216:15"><span class="font-display text-2xl text-primary/70" data-tsd-source="/src/routes/index.tsx:217:17">05</span><h3 class="font-display text-3xl" data-tsd-source="/src/routes/index.tsx:218:17">Crecimiento</h3></div><p class="mt-4 max-w-sm text-base leading-relaxed text-muted-foreground" data-tsd-source="/src/routes/index.tsx:220:15">Un camino sostenido de exploración personal en comunidad.</p></div></div></section><section class="relative overflow-hidden bg-charcoal text-background" data-tsd-source="/src/routes/index.tsx:229:7"><div class="mx-auto max-w-6xl px-6 py-32 text-center md:py-48 lg:px-10" data-tsd-source="/src/routes/index.tsx:230:9"><div class="eyebrow mb-8 text-background/60" data-tsd-source="/src/routes/index.tsx:231:11">Reservas</div><h2 class="font-display text-5xl leading-[1.03] text-background md:text-7xl lg:text-8xl" data-tsd-source="/src/routes/index.tsx:232:11">Tu próximo momento<br data-tsd-source="/src/routes/index.tsx:233:31"/>de <em class="italic" data-tsd-source="/src/routes/index.tsx:234:16">bienestar</em> comienza aquí.</h2><p class="mx-auto mt-8 max-w-lg text-base leading-relaxed text-background/70 md:text-lg" data-tsd-source="/src/routes/index.tsx:236:11">Escríbenos y te acompañamos a elegir la experiencia que hoy resuena contigo.</p><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" class="mt-12 inline-flex items-center gap-3 rounded-full bg-background px-8 py-4 text-[0.75rem] tracking-[0.24em] uppercase text-charcoal transition-all hover:bg-primary hover:text-primary-foreground" data-tsd-source="/src/routes/index.tsx:240:11">Reservar por WhatsApp<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-4 w-4" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:247:13"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></div></section><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--></main><footer class="border-t border-border/60 bg-secondary/40 text-foreground" data-tsd-source="/src/components/site-footer.tsx:7:5"><div class="mx-auto max-w-7xl px-6 py-20 lg:px-10" data-tsd-source="/src/components/site-footer.tsx:8:7"><div class="grid gap-12 md:grid-cols-12" data-tsd-source="/src/components/site-footer.tsx:9:9"><div class="md:col-span-5" data-tsd-source="/src/components/site-footer.tsx:10:11"><div class="font-display text-4xl leading-tight md:text-5xl" data-tsd-source="/src/components/site-footer.tsx:11:13">Shanti Ibarra</div><p class="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground" data-tsd-source="/src/components/site-footer.tsx:14:13">Un santuario de bienestar en los Andes ecuatorianos. Yoga, ceremonias, brunch consciente y encuentros para volver a ti.</p><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" class="mt-8 inline-block rounded-full border border-foreground px-6 py-3 text-[0.72rem] tracking-[0.22em] uppercase transition-all hover:bg-foreground hover:text-background" data-tsd-source="/src/components/site-footer.tsx:18:13">Reservar por WhatsApp</a></div><div class="md:col-span-3" data-tsd-source="/src/components/site-footer.tsx:28:11"><div class="eyebrow mb-5" data-tsd-source="/src/components/site-footer.tsx:29:13">Explorar</div><ul class="space-y-3 text-sm" data-tsd-source="/src/components/site-footer.tsx:30:13"><li data-tsd-source="/src/components/site-footer.tsx:31:15"><a data-tsd-source="/src/components/site-footer.tsx:31:19" href="/experiencias" class="hover:text-primary">Experiencias</a></li><li data-tsd-source="/src/components/site-footer.tsx:32:15"><a data-tsd-source="/src/components/site-footer.tsx:32:19" href="/eventos" class="hover:text-primary">Eventos</a></li><li data-tsd-source="/src/components/site-footer.tsx:33:15"><a data-tsd-source="/src/components/site-footer.tsx:33:19" href="/galeria" class="hover:text-primary">Galería</a></li><li data-tsd-source="/src/components/site-footer.tsx:34:15"><a data-tsd-source="/src/components/site-footer.tsx:34:19" href="/nosotros" class="hover:text-primary">Nosotros</a></li><li data-tsd-source="/src/components/site-footer.tsx:35:15"><a data-tsd-source="/src/components/site-footer.tsx:35:19" href="/contacto" class="hover:text-primary">Contacto</a></li></ul></div><div class="md:col-span-4" data-tsd-source="/src/components/site-footer.tsx:39:11"><div class="eyebrow mb-5" data-tsd-source="/src/components/site-footer.tsx:40:13">Contacto</div><ul class="space-y-3 text-sm text-muted-foreground" data-tsd-source="/src/components/site-footer.tsx:41:13"><li data-tsd-source="/src/components/site-footer.tsx:42:15">Ibarra, Ecuador</li><li data-tsd-source="/src/components/site-footer.tsx:43:15"><a href="mailto:hola@shantiibarra.com" class="hover:text-primary" data-tsd-source="/src/components/site-footer.tsx:44:17">hola@shantiibarra.com</a></li><li data-tsd-source="/src/components/site-footer.tsx:48:15"><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" class="hover:text-primary" data-tsd-source="/src/components/site-footer.tsx:49:17">WhatsApp <!-- -->+593 98 870 6699</a></li><li data-tsd-source="/src/components/site-footer.tsx:53:15"><a href="https://www.instagram.com/shanti.ibarra/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-primary" data-tsd-source="/src/components/site-footer.tsx:54:17"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-4 w-4" aria-hidden="true" data-tsd-source="/src/components/site-footer.tsx:60:19"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg> <!-- -->@shanti.ibarra</a></li></ul></div></div><div class="mt-16 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-8 text-xs text-muted-foreground md:flex-row" data-tsd-source="/src/components/site-footer.tsx:67:9"><span data-tsd-source="/src/components/site-footer.tsx:68:11">© <!-- -->2026<!-- --> Shanti Ibarra. Todos los derechos reservados.</span><span class="tracking-[0.24em] uppercase" data-tsd-source="/src/components/site-footer.tsx:69:11">Bienestar · Comunidad · Naturaleza</span></div></div></footer><a href="https://wa.me/593988706699?text=Hola%20Shanti%2C%20me%20gustar%C3%ADa%20reservar%20una%20experiencia." target="_blank" rel="noopener noreferrer" aria-label="Reservar por WhatsApp" class="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_18px_40px_-12px_rgba(0,0,0,0.35)] transition-transform hover:scale-105 md:h-16 md:w-16" data-tsd-source="/src/components/whatsapp-fab.tsx:5:5"><svg viewBox="0 0 32 32" class="h-7 w-7 md:h-8 md:w-8" fill="currentColor" aria-hidden="true" data-tsd-source="/src/components/whatsapp-fab.tsx:12:7"><path d="M19.11 17.28c-.29-.14-1.7-.84-1.97-.93-.26-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.29-.02-.44.13-.58.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.14-.23-.56-.47-.48-.65-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 .98-1 2.4 0 1.41 1.03 2.78 1.17 2.97.14.19 2.02 3.08 4.89 4.32.68.29 1.21.46 1.63.59.68.22 1.3.19 1.79.11.55-.08 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34zM16.02 5.33c-5.9 0-10.7 4.78-10.7 10.66 0 1.88.5 3.7 1.44 5.32L5 26.67l5.5-1.43c1.56.85 3.32 1.3 5.11 1.3h.01c5.9 0 10.7-4.78 10.7-10.66 0-2.85-1.11-5.53-3.13-7.54a10.7 10.7 0 0 0-7.57-3.11z" data-tsd-source="/src/components/whatsapp-fab.tsx:13:9"></path></svg></a><script class="$tsr" id="$tsr-stream-barrier">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-CbyR7_M0.js","/assets/jsx-runtime-VBQ5xY5v.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-CbyR7_M0.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-DA_XHPpJ.js","/assets/arrow-up-right-DEOcjDwH.js","/assets/exp-encuentros-DYtfiv18.js","/assets/exp-talleres-B4r7AOQd.js","/assets/intro-space-QnPRqCuu.js","/assets/section-CgNePSDm.js"]}}},matches:$R[10]=[$R[11]={i:"__root__",u:1784662682380,s:"success",ssr:!0},$R[12]={i:"",u:1784662682380,s:"success",ssr:!0}],lastMatchId:""})($R["tsr"]);$_TSR.e();document.currentScript.remove()</script><script type="module" async="" src="/assets/index-CbyR7_M0.js"></script><script src="https://cdn.gpteng.co/lovable.js" type="module"></script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/e887c69f-c8f2-4c2b-b200-9743f47561ec?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+</body></html>
