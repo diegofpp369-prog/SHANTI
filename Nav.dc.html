@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</helmet>
+<nav style="position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(18px,5vw,56px);height:74px;background:{{ barBg }};backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid {{ barBorder }};transition:background .4s ease,border-color .4s ease;font-family:'Jost',sans-serif">
+  <a href="index.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0">
+    <img src="uploads/logo-shanti.png" alt="Shanti Ibarra" style="width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 2px 10px rgba(47,110,106,.14)">
+    <span style="display:flex;flex-direction:column;line-height:1">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;letter-spacing:.14em;color:#2F6E6A">SHANTI</span>
+      <span style="font-size:9px;letter-spacing:.34em;color:#9a988f;margin-top:3px">IBARRA · ECUADOR</span>
+    </span>
+  </a>
+
+  <div style="display:flex;align-items:center;gap:24px" data-desktop-nav>
+    <sc-for list="{{ links }}" as="link" hint-placeholder-count="6">
+      <a href="{{ link.href }}" style="{{ link.style }}" style-hover="color:#2F6E6A">{{ link.label }}</a>
+    </sc-for>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:14px;flex-shrink:0">
+    <button onClick="{{ toggleLang }}" style="background:none;border:1px solid rgba(47,110,106,.35);border-radius:999px;padding:6px 12px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.12em;color:#2F6E6A;cursor:pointer;display:flex;align-items:center;gap:5px" title="Cambiar idioma">
+      <span style="{{ esStyle }}">ES</span><span style="opacity:.4">/</span><span style="{{ enStyle }}">EN</span>
+    </button>
+    <a href="{{ waHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#2F6E6A;color:#FBF7F1;text-decoration:none;padding:10px 20px;border-radius:999px;font-size:12.5px;letter-spacing:.06em;font-weight:400;box-shadow:0 4px 16px rgba(47,110,106,.24)" style-hover="background:#245A57" data-cta>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.3-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 15.2 3.6 13.6 3.6 12 3.6 7.4 7.4 3.7 12 3.7c4.6 0 8.3 3.7 8.3 8.3S16.6 20.3 12 20.3z"/></svg>
+      {{ waLabel }}
+    </a>
+    <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:none;background:none;border:none;cursor:pointer;padding:6px;color:#33322E" data-burger>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;top:74px;left:0;right:0;background:#FBF7F1;border-bottom:1px solid rgba(51,50,46,.1);padding:14px clamp(18px,5vw,56px) 26px;display:flex;flex-direction:column;gap:2px;box-shadow:0 20px 40px rgba(47,110,106,.1)">
+      <sc-for list="{{ links }}" as="link" hint-placeholder-count="6">
+        <a href="{{ link.href }}" style="{{ link.mStyle }}">{{ link.label }}</a>
+      </sc-for>
+    </div>
+  </sc-if>
+</nav>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:74},&quot;page&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;historia&quot;,&quot;experiencias&quot;,&quot;eventos&quot;,&quot;galeria&quot;,&quot;contacto&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { menuOpen: false, scrolled: false };
+  componentDidMount() {
+    this.applyResponsive();
+    this._onScroll = () => {
+      const s = window.scrollY > 24;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    this._onResize = () => this.applyResponsive();
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onResize);
+    this._onScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('resize', this._onResize);
+  }
+  applyResponsive() {
+    const root = this._root || (this._root = document.currentScript && document.currentScript.parentElement);
+    const el = document.querySelector('nav [data-desktop-nav]');
+    const burger = document.querySelector('nav [data-burger]');
+    const cta = document.querySelector('nav [data-cta]');
+    const mobile = window.innerWidth < 1024;
+    if (el) el.style.display = mobile ? 'none' : 'flex';
+    if (burger) burger.style.display = mobile ? 'flex' : 'none';
+    if (cta) cta.style.display = window.innerWidth < 520 ? 'none' : 'inline-flex';
+  }
+  toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+  toggleLang = () => {
+    const cur = (localStorage.getItem('shanti_lang') || 'es');
+    localStorage.setItem('shanti_lang', cur === 'es' ? 'en' : 'es');
+    location.reload();
+  };
+  renderVals() {
+    const lang = (typeof localStorage !== 'undefined' && localStorage.getItem('shanti_lang')) || 'es';
+    const page = this.props.page || 'home';
+    const labels = {
+      es: ['Inicio', 'Nuestra Historia', 'Experiencias', 'Eventos', 'Galería', 'Contacto'],
+      en: ['Home', 'Our Story', 'Experiences', 'Events', 'Gallery', 'Contact']
+    }[lang];
+    const hrefs = ['index.dc.html', 'historia.dc.html', 'experiencias.dc.html', 'eventos.dc.html', 'galeria.dc.html', 'contacto.dc.html'];
+    const ids = ['home', 'historia', 'experiencias', 'eventos', 'galeria', 'contacto'];
+    const links = labels.map((label, i) => {
+      const active = ids[i] === page;
+      return {
+        label, href: hrefs[i], active,
+        style: `text-decoration:none;font-size:13.5px;letter-spacing:.04em;color:${active ? '#2F6E6A' : '#4a4842'};font-weight:${active ? '500' : '400'};padding-bottom:3px;border-bottom:1.5px solid ${active ? '#C98A8C' : 'transparent'};transition:color .25s ease`,
+        mStyle: `text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:22px;color:${active ? '#2F6E6A' : '#33322E'};padding:11px 0;border-bottom:1px solid rgba(51,50,46,.06)`
+      };
+    });
+    const scrolled = this.state.scrolled;
+    return {
+      links,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: this.toggleMenu,
+      toggleLang: this.toggleLang,
+      barBg: scrolled ? 'rgba(251,247,241,0.9)' : 'rgba(251,247,241,0.66)',
+      barBorder: scrolled ? 'rgba(51,50,46,0.1)' : 'rgba(51,50,46,0.04)',
+      esStyle: `font-weight:${lang === 'es' ? '600' : '400'};opacity:${lang === 'es' ? '1' : '.5'}`,
+      enStyle: `font-weight:${lang === 'en' ? '600' : '400'};opacity:${lang === 'en' ? '1' : '.5'}`,
+      waHref: 'https://wa.me/593988706699?text=' + encodeURIComponent(lang === 'es' ? 'Hola Shanti, quiero reservar 🌿' : 'Hi Shanti, I would like to book 🌿'),
+      waLabel: lang === 'es' ? 'Reservar' : 'Book'
+    };
+  }
+}
+</script>
+</body>
+</html>
