@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuestra Historia · Shanti Ibarra</title>
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shanti Ibarra">
+<meta property="og:image" content="assets/hero.jpg">
+<meta name="description" content="La historia de Shanti Ibarra y de Chave, su fundadora. Un camino de despertar que nació en 2022 en las montañas de Ibarra, Ecuador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}html{scroll-behavior:smooth;}
+  body{margin:0;background:#FAF6F1;color:#33322E;font-family:'Jost',sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:#2F6E6A;}a:hover{color:#245A57;}
+</style>
+</helmet>
+<div style="background:#FAF6F1;overflow-x:hidden">
+<dc-import name="Nav" page="historia" hint-size="100%,74px"></dc-import>
+
+<!-- PAGE HERO -->
+<section style="background:#F1E6E1;padding:clamp(64px,9vw,110px) clamp(22px,6vw,64px);text-align:center;position:relative;overflow:hidden">
+  <svg viewBox="0 0 120 120" width="200" height="200" style="position:absolute;right:-40px;top:-30px;opacity:.1;color:#C98A8C" fill="none" stroke="currentColor" stroke-width="1"><path d="M60 118C60 82 42 66 20 62 44 58 60 40 60 4 60 40 76 58 100 62 78 66 60 82 60 118Z"/></svg>
+  <p style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#C98A8C;margin:0 0 16px;font-weight:500;position:relative">{{ c.kicker }}</p>
+  <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,6.5vw,78px);line-height:1.02;margin:0 0 18px;color:#2b3a36;position:relative">{{ c.title }}</h1>
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.6vw,26px);color:#8a6f68;margin:0 auto;max-width:560px;position:relative">{{ c.sub }}</p>
+</section>
+
+<!-- ORIGIN -->
+<section style="max-width:760px;margin:0 auto;padding:clamp(70px,10vw,120px) clamp(22px,6vw,64px);text-align:center">
+  <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease">
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(24px,3.4vw,34px);color:#2F6E6A;margin:0 0 30px">{{ c.dateLine }}</p>
+    <p style="font-size:18px;line-height:1.85;font-weight:300;color:#4b4942;margin:0">{{ c.origin }}</p>
+  </div>
+</section>
+
+<!-- TWO COL -->
+<section style="max-width:1180px;margin:0 auto;padding:0 clamp(22px,6vw,64px) clamp(70px,10vw,120px);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,6vw,72px);align-items:center">
+  <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease">
+    <img src="assets/hero.jpg" alt="Amanecer en Shanti" style="width:100%;border-radius:6px;display:block;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)">
+  </div>
+  <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .9s ease .1s,transform .9s ease .1s">
+    <p style="font-size:18px;line-height:1.85;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.body1 }}</p>
+    <p style="font-size:18px;line-height:1.85;font-weight:300;color:#4b4942;margin:0">{{ c.body2 }}</p>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section style="background:#2b3a36;padding:clamp(64px,9vw,110px) clamp(22px,6vw,64px);text-align:center">
+  <div data-reveal style="max-width:760px;margin:0 auto;opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="#C9A9A1" style="margin:0 auto 20px;opacity:.6"><path d="M17 8c-5 2-9 7-9 14 0 6 3 10 8 10 4 0 7-3 7-7s-3-7-7-7c-1 0-1 0-2 .2C15 15 18 12 21 11l-4-3ZM35 8c-5 2-9 7-9 14 0 6 3 10 8 10 4 0 7-3 7-7s-3-7-7-7c-1 0-1 0-2 .2 1-6 4-9 7-10l-4-3Z"/></svg>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(26px,4vw,42px);line-height:1.4;color:#fff;margin:0">{{ c.quote }}</p>
+    <p style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#a9c2bc;margin:26px 0 0">— Chave</p>
+  </div>
+</section>
+
+<!-- CHAVE -->
+<section style="max-width:1180px;margin:0 auto;padding:clamp(70px,10vw,120px) clamp(22px,6vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,6vw,72px);align-items:center">
+  <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease;position:relative;order:2" data-chave-img>
+    <div style="position:absolute;top:-16px;right:-16px;width:64px;height:64px;border-top:1px solid #C98A8C;border-right:1px solid #C98A8C;opacity:.6"></div>
+    <img src="assets/chave.jpg" alt="Chave, fundadora de Shanti, con su hijo Lucas" style="width:100%;border-radius:6px;display:block;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)">
+  </div>
+  <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .9s ease .1s,transform .9s ease .1s;order:1">
+    <p style="font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#C98A8C;margin:0 0 16px;font-weight:500">{{ c.chaveKicker }}</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(32px,4.4vw,50px);line-height:1.06;margin:0 0 24px;color:#2b3a36">{{ c.chaveTitle }}</h2>
+    <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 18px">{{ c.chave1 }}</p>
+    <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 18px">{{ c.chave2 }}</p>
+    <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0">{{ c.chave3 }}</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section style="max-width:720px;margin:0 auto;padding:0 clamp(22px,6vw,64px) clamp(80px,12vw,140px);text-align:center">
+  <div data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease">
+    <div style="width:54px;height:1px;background:#C98A8C;margin:0 auto 30px"></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,3.6vw,34px);line-height:1.5;color:#2b3a36;margin:0 0 34px">{{ c.closing }}</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="{{ waHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;background:#2F6E6A;color:#FBF7F1;text-decoration:none;padding:15px 30px;border-radius:999px;font-size:14px;letter-spacing:.05em;box-shadow:0 10px 28px rgba(47,110,106,.24)" style-hover="background:#245A57">{{ c.ctaBook }}</a>
+      <a href="experiencias.html" style="display:inline-flex;align-items:center;gap:9px;background:none;border:1px solid #2F6E6A;color:#2F6E6A;text-decoration:none;padding:15px 30px;border-radius:999px;font-size:14px;letter-spacing:.05em" style-hover="background:#2F6E6A;color:#fff">{{ c.ctaExp }} →</a>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  componentDidMount() { this.setupReveal(); this.applyOrder(); this._r = () => this.applyOrder(); window.addEventListener('resize', this._r); }
+  componentWillUnmount() { clearTimeout(this._f); if (this._io) this._io.disconnect(); window.removeEventListener('resize', this._r); }
+  applyOrder() {
+    const img = document.querySelector('[data-chave-img]');
+    if (img) img.style.order = window.innerWidth < 660 ? '1' : '2';
+  }
+  setupReveal() {
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const show = el => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    if (!('IntersectionObserver' in window)) { els.forEach(show); return; }
+    this._io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { show(e.target); this._io.unobserve(e.target); } }), { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(el => this._io.observe(el));
+    this._f = setTimeout(() => els.forEach(show), 2200);
+  }
+  renderVals() {
+    const lang = (typeof localStorage !== 'undefined' && localStorage.getItem('shanti_lang')) || 'es';
+    const es = lang === 'es';
+    const c = es ? {
+      kicker: 'Nuestra Historia', title: 'Un camino de despertar', sub: 'No empezó con respuestas, empezó con preguntas incómodas.',
+      dateLine: 'Nació un 31 de enero de 2022.',
+      origin: 'Con momentos de silencio, con decisiones que dolieron, con aprender a escucharse. Shanti es un espacio para eso: para quien ya no quiere huir de sí.',
+      body1: 'A veces no estamos rotas, solo estamos desconectadas. Desconectadas del cuerpo, de la intuición, de lo que sentimos. Este espacio no promete soluciones rápidas: acompaña procesos reales.',
+      body2: 'Aquí no tienes que saberlo todo. No tienes que estar “bien”. No tienes que ser fuerte. Solo tienes que estar dispuesta a volver a ti, a tu ritmo.',
+      quote: 'El yoga no cambió mi cuerpo. Cambió la forma en que me relaciono con la vida.',
+      chaveKicker: 'La fundadora', chaveTitle: 'Chave',
+      chave1: 'Chave es emprendedora, madre y mujer ecuatoriana que, con su energía, crea este espacio de armonía para encuentros llenos de paz. Nació el 9 de marzo de 1990 y, en estas —sus tierras— propone un lugar donde todos podamos encontrarnos.',
+      chave2: 'Para ella, el yoga va mucho más allá de las posturas. Es una guía cuando hay dudas, una pausa cuando hay ruido y un camino para volver a una misma. Por eso sus clases no buscan que hagas más: buscan que puedas escucharte un poco más.',
+      chave3: 'Antes que maestra, Chave es mamá de Lucas. Su hijo es su gran maestro y el motor de este camino: la maternidad le enseñó a bajar el ritmo, a estar presente y a sostener con ternura —la misma con la que hoy recibe a cada persona que llega a Shanti.',
+      closing: 'Aquí no tienes que ser nadie más. Solo volver a ti, a tu ritmo.',
+      ctaBook: 'Reservar por WhatsApp', ctaExp: 'Conocer experiencias'
+    } : {
+      kicker: 'Our Story', title: 'A path of awakening', sub: 'It did not begin with answers — it began with uncomfortable questions.',
+      dateLine: 'It was born on 31 January 2022.',
+      origin: 'With moments of silence, with decisions that hurt, with learning to listen to oneself. Shanti is a space for exactly that: for those who no longer want to run from themselves.',
+      body1: 'Sometimes we are not broken, only disconnected — from the body, from intuition, from what we feel. This space does not promise quick fixes: it accompanies real processes.',
+      body2: 'Here you do not have to know it all. You do not have to be “well”. You do not have to be strong. You only have to be willing to return to yourself, at your own pace.',
+      quote: 'Yoga did not change my body. It changed the way I relate to life.',
+      chaveKicker: 'The founder', chaveTitle: 'Chave',
+      chave1: 'Chave is an entrepreneur, a mother and an Ecuadorian woman who, with her energy, creates this space of harmony for gatherings full of peace. Born on 9 March 1990, she offers, on this — her land — a place where we can all meet.',
+      chave2: 'For her, yoga goes far beyond the postures. It is a guide when there is doubt, a pause when there is noise, and a path back to oneself. That is why her classes do not ask you to do more: they invite you to listen to yourself a little more.',
+      chave3: 'Before she is a teacher, Chave is Lucas’s mum. Her son is her great teacher and the driving force of this path: motherhood taught her to slow down, to be present and to hold with tenderness — the same tenderness with which she welcomes everyone who arrives at Shanti.',
+      closing: 'Here you do not have to be anyone else. Only to return to yourself, at your own pace.',
+      ctaBook: 'Book on WhatsApp', ctaExp: 'Explore experiences'
+    };
+    return { c, waHref: 'https://wa.me/593988706699?text=' + encodeURIComponent(es ? 'Hola Shanti, quiero reservar 🌿' : 'Hi Shanti, I would like to book 🌿') };
+  }
+}
+</script>
+</body>
+</html>

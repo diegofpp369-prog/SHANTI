@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiencias · Shanti Ibarra</title>
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shanti Ibarra">
+<meta property="og:image" content="assets/hero.jpg">
+<meta name="description" content="Yoga, yoga + brunch consciente, talleres para mujeres, ceremonias, cumpleaños y alquiler de espacio en Shanti Ibarra, Ecuador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}html{scroll-behavior:smooth;}
+  body{margin:0;background:#FAF6F1;color:#33322E;font-family:'Jost',sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:#2F6E6A;}a:hover{color:#245A57;}
+</style>
+</helmet>
+<div style="background:#FAF6F1;overflow-x:hidden">
+<dc-import name="Nav" page="experiencias" hint-size="100%,74px"></dc-import>
+
+<section style="background:#F1E6E1;padding:clamp(64px,9vw,110px) clamp(22px,6vw,64px);text-align:center;position:relative;overflow:hidden">
+  <svg viewBox="0 0 120 120" width="200" height="200" style="position:absolute;left:-44px;bottom:-40px;opacity:.1;color:#C98A8C" fill="none" stroke="currentColor" stroke-width="1"><path d="M60 118C60 82 42 66 20 62 44 58 60 40 60 4 60 40 76 58 100 62 78 66 60 82 60 118Z"/></svg>
+  <p style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#C98A8C;margin:0 0 16px;font-weight:500;position:relative">{{ c.kicker }}</p>
+  <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(40px,6.5vw,78px);line-height:1.02;margin:0 0 18px;color:#2b3a36;position:relative">{{ c.title }}</h1>
+  <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.6vw,26px);color:#8a6f68;margin:0 auto;max-width:600px;position:relative">{{ c.sub }}</p>
+</section>
+
+<div style="max-width:1180px;margin:0 auto;padding:clamp(60px,9vw,110px) clamp(22px,6vw,64px);display:flex;flex-direction:column;gap:clamp(64px,9vw,120px)">
+
+  <!-- YOGA -->
+  <section id="yoga" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div style="border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/group-yoga.jpg" alt="Clase de yoga en grupo" style="width:100%;display:block"></div>
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">01</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="11" r="4"/><path d="M24 15v9M24 24c-6 0-11 3-13 8h26c-2-5-7-8-13-8Z"/><path d="M24 24c5 1 9 3 13 2M24 24c-5 1-9 3-13 2"/></svg></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.yogaT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.yogaD }}</p>
+      <sc-for list="{{ c.yogaL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+  </section>
+
+  <!-- BRUNCH -->
+  <section id="brunch" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">02</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h20v6a10 10 0 0 1-20 0v-6Z"/><path d="M30 22h4a4 4 0 0 1 0 8h-4"/><path d="M16 14c0-2 2-2 2-4M22 14c0-2 2-2 2-4M14 40h22"/></svg></div>
+      <div style="display:inline-block;background:#2F6E6A;color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:16px">{{ c.brunchTag }}</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.brunchT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.brunchD }}</p>
+      <sc-for list="{{ c.brunchL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+    <div style="border-radius:6px;overflow:hidden;min-height:320px;position:relative;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/brunch.jpg" alt="Brunch consciente de bienvenida" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  </section>
+
+  <!-- TALLERES -->
+  <section id="talleres" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div style="border-radius:6px;overflow:hidden;min-height:320px;position:relative;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/talleres.jpg" alt="Taller de mujeres en Shanti" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">03</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="15"/><circle cx="24" cy="14" r="2.4"/><circle cx="33" cy="20" r="2.4"/><circle cx="30" cy="31" r="2.4"/><circle cx="18" cy="31" r="2.4"/><circle cx="15" cy="20" r="2.4"/></svg></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.tallT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.tallD }}</p>
+      <sc-for list="{{ c.tallL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+  </section>
+
+  <!-- CEREMONIAS -->
+  <section id="ceremonias" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">04</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6a13 13 0 1 0 12 18 10 10 0 0 1-12-18Z"/><path d="M31 12l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3Z"/></svg></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.ceremT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.ceremD }}</p>
+      <sc-for list="{{ c.ceremL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+    <div style="border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/ceremonia.jpg" alt="Ceremonia en círculo con mandala de flores" style="width:100%;display:block"></div>
+  </section>
+
+  <!-- CUMPLEAÑOS -->
+  <section id="cumpleanos" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div style="border-radius:6px;overflow:hidden;min-height:320px;position:relative;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/cumpleanos.jpg" alt="Celebración de cumpleaños en la naturaleza" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">05</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5v5M24 10c1 0 2-1 2-2.5S24 5 24 5s-2 1-2 2.5S23 10 24 10Z"/><path d="M12 22h24v14a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V22Z"/><path d="M24 10v12M12 28c3 2 6 2 12 0s9-2 12 0"/></svg></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.cumpT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.cumpD }}</p>
+      <sc-for list="{{ c.cumpL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+  </section>
+
+  <!-- ALQUILER -->
+  <section id="alquiler" data-reveal style="scroll-margin-top:90px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(36px,5vw,64px);align-items:center;opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#C98A8C;line-height:1">06</span><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#2F6E6A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24 24 11l16 13"/><path d="M12 22v15h24V22"/><path d="M6 40h36M20 37v-7h8v7"/></svg></div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4vw,46px);margin:0 0 18px;color:#2b3a36;line-height:1.05">{{ c.alqT }}</h2>
+      <p style="font-size:16.5px;line-height:1.8;font-weight:300;color:#4b4942;margin:0 0 22px">{{ c.alqD }}</p>
+      <sc-for list="{{ c.alqL }}" as="it" hint-placeholder-count="3"><div style="display:flex;align-items:center;gap:11px;margin-bottom:11px;font-size:14.5px;color:#5c5a53"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#C98A8C" stroke-width="1.6"><path d="m4 10 4 4 8-9"/></svg>{{ it }}</div></sc-for>
+    </div>
+    <div style="border-radius:6px;overflow:hidden;min-height:320px;position:relative;box-shadow:0 30px 60px -30px rgba(47,110,106,.4)"><img src="assets/comunidad.jpg" alt="Grupo disfrutando del espacio de Shanti" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+  </section>
+</div>
+
+<section style="background:#2b3a36;padding:clamp(70px,10vw,120px) clamp(22px,6vw,64px);text-align:center">
+  <div data-reveal style="max-width:640px;margin:0 auto;opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4.4vw,50px);line-height:1.08;margin:0 0 20px;color:#fff">{{ c.ctaTitle }}</h2>
+    <p style="font-size:16px;line-height:1.75;font-weight:300;color:#c7d4d0;margin:0 0 34px">{{ c.ctaText }}</p>
+    <a href="{{ waHref }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#2b3a36;text-decoration:none;padding:16px 34px;border-radius:999px;font-size:14.5px;letter-spacing:.05em" style-hover="background:#F1E6E1">{{ c.ctaBook }}</a>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,420px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  componentDidMount() { this.setupReveal(); if (location.hash) setTimeout(() => { const el = document.querySelector(location.hash); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 84 }); }, 400); }
+  componentWillUnmount() { clearTimeout(this._f); if (this._io) this._io.disconnect(); }
+  setupReveal() {
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const show = el => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    if (!('IntersectionObserver' in window)) { els.forEach(show); return; }
+    this._io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { show(e.target); this._io.unobserve(e.target); } }), { threshold: 0.08, rootMargin: '0px 0px -5% 0px' });
+    els.forEach(el => this._io.observe(el));
+    this._f = setTimeout(() => els.forEach(show), 2400);
+  }
+  renderVals() {
+    const lang = (typeof localStorage !== 'undefined' && localStorage.getItem('shanti_lang')) || 'es';
+    const es = lang === 'es';
+    const c = es ? {
+      kicker: 'Experiencias', title: 'Formas de reencontrarte', sub: 'Cada encuentro es una invitación a bajar el ritmo y volver a ti.',
+      yogaT: 'Yoga', yogaD: 'Distintos estilos de yoga —hatha, vinyasa y yoga suave— pensados para todos los niveles. No buscamos que hagas más, sino que puedas escucharte un poco más. Cada clase es una pausa para habitar el cuerpo, respirar y volver al presente.',
+      yogaL: ['Clases para principiantes e intermedios', 'Mat y props disponibles', 'Grupos reducidos frente a la montaña'],
+      brunchTag: 'Nuestra experiencia estrella', brunchT: 'Yoga + Brunch', brunchD: 'Comienza con una práctica suave al amanecer y continúa con un brunch consciente preparado con productos frescos y locales: frutas ecuatorianas, pan artesanal, café de altura y jugos naturales para compartir entre montañas.',
+      brunchL: ['Clase de yoga de 60 minutos', 'Brunch consciente completo', 'Ideal para grupos y celebraciones'],
+      tallT: 'Talleres para mujeres', tallD: 'Círculos y talleres para reconectar, crear y sostenernos entre mujeres. Espacios seguros para hablar, sentir y acompañarnos en los procesos que la vida nos trae.',
+      tallL: ['Círculos de mujeres', 'Talleres creativos y de bienestar', 'Cupos limitados'],
+      ceremT: 'Ceremonias', ceremD: 'Rituales para marcar procesos, cerrar ciclos y honrar la vida. Ceremonias de cacao, de luna y momentos de intención para reconectar con lo esencial bajo el cielo de Ibarra.',
+      ceremL: ['Ceremonia de cacao', 'Rituales de luna llena', 'Cierres de ciclo e intención'],
+      cumpT: 'Cumpleaños', cumpD: 'Celebra tu día en la naturaleza, con calma, flores y buena energía. Diseñamos una experiencia a tu medida —yoga, brunch y un entorno mágico— para reunir a quienes más quieres.',
+      cumpL: ['Decoración natural', 'Brunch o almuerzo a elección', 'Experiencia personalizada'],
+      alqT: 'Alquiler de espacio', alqD: 'Un entorno natural único para eventos privados y encuentros corporativos. Retiros de equipo, sesiones de bienestar y celebraciones rodeadas de montañas y bosque.',
+      alqL: ['Eventos privados y corporativos', 'Espacio interior y exterior', 'Acompañamiento en la organización'],
+      ctaTitle: '¿Lista para vivir tu experiencia?', ctaText: 'Escríbenos por WhatsApp y armamos juntas el encuentro perfecto para ti.', ctaBook: 'Reservar por WhatsApp'
+    } : {
+      kicker: 'Experiences', title: 'Ways to reconnect', sub: 'Every gathering is an invitation to slow down and return to yourself.',
+      yogaT: 'Yoga', yogaD: 'Different styles of yoga —hatha, vinyasa and gentle yoga— designed for all levels. We do not ask you to do more, but to listen to yourself a little more. Each class is a pause to inhabit the body, breathe and return to the present.',
+      yogaL: ['Classes for beginners and intermediates', 'Mats and props available', 'Small groups facing the mountain'],
+      brunchTag: 'Our signature experience', brunchT: 'Yoga + Brunch', brunchD: 'Begin with a gentle sunrise practice and continue with a conscious brunch made from fresh, local produce: Ecuadorian fruit, artisan bread, highland coffee and natural juices to share among the mountains.',
+      brunchL: ['60-minute yoga class', 'Full conscious brunch', 'Ideal for groups and celebrations'],
+      tallT: "Women's workshops", tallD: 'Circles and workshops to reconnect, create and hold one another as women. Safe spaces to speak, feel and accompany each other through the processes life brings.',
+      tallL: ["Women's circles", 'Creative and wellbeing workshops', 'Limited spots'],
+      ceremT: 'Ceremonies', ceremD: 'Rituals to mark processes, close cycles and honour life. Cacao and moon ceremonies and moments of intention to reconnect with the essential under the Ibarra sky.',
+      ceremL: ['Cacao ceremony', 'Full-moon rituals', 'Cycle closings and intention'],
+      cumpT: 'Birthdays', cumpD: 'Celebrate your day in nature, with calm, flowers and good energy. We design an experience just for you —yoga, brunch and a magical setting— to gather those you love most.',
+      cumpL: ['Natural decoration', 'Brunch or lunch of your choice', 'Personalised experience'],
+      alqT: 'Venue rental', alqD: 'A unique natural setting for private events and corporate gatherings. Team retreats, wellbeing sessions and celebrations surrounded by mountains and forest.',
+      alqL: ['Private and corporate events', 'Indoor and outdoor space', 'Support with organisation'],
+      ctaTitle: 'Ready to live your experience?', ctaText: 'Message us on WhatsApp and we will craft the perfect gathering for you together.', ctaBook: 'Book on WhatsApp'
+    };
+    return { c, waHref: 'https://wa.me/593988706699?text=' + encodeURIComponent(es ? 'Hola Shanti, quiero reservar una experiencia 🌿' : 'Hi Shanti, I would like to book an experience 🌿') };
+  }
+}
+</script>
+</body>
+</html>
